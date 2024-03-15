@@ -13,17 +13,17 @@ export default function App() {
     8,
     9,
     'x',
-    6,
-    5,
     4,
+    5,
+    6,
     '-',
-    3,
-    2,
     1,
+    2,
+    3,
     '+',
+    '+/-',
     0,
     '.',
-    '+/-',
     '=',
   ];
 
@@ -45,10 +45,10 @@ export default function App() {
         setCurrentNumber((fistNumber - lastNumber).toString());
         return;
       case 'x':
-        setCurrentNumber((fistNumber + lastNumber).toString());
+        setCurrentNumber((fistNumber * lastNumber).toString());
         return;
       case '/':
-        setCurrentNumber((fistNumber - lastNumber).toString());
+        setCurrentNumber((fistNumber / lastNumber).toString());
         return;
     }
   }
