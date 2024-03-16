@@ -98,8 +98,8 @@ export default function App() {
             <TouchableOpacity
               onPress={() => handleInput(button)}
               key={button}
-              style={[styles.button, {backgroundColor: '#3dd0e3'}]}>
-              <Text style={[styles.textButton, {color: 'white', fontSize: 30}]}>
+              style={[styles.button, {backgroundColor: '#1D1340'}]}>
+              <Text style={[styles.textButton, {color: '#F2F2F2', fontSize: 30}]}>
                 {button}
               </Text>
             </TouchableOpacity>
@@ -112,7 +112,7 @@ export default function App() {
               <Text
                 style={[
                   styles.textButton,
-                  {color: typeof button === 'number' ? 'black' : '#0093a6'},
+                  {color: typeof button === 'number' ? '#F2EEF6' : '#757478'},
                 ]}>
                 {button}
               </Text>
@@ -132,17 +132,17 @@ const styles = StyleSheet.create({
   results: {
     flex: 2,
     justifyContent: 'center',
-    backgroundColor: '#f5f5f5',
+    backgroundColor: '#1E1240',
   },
   resultText: {
-    color: '#282F38',
+    color: '#F2F2F2',
     fontSize: 32,
     fontWeight: 'bold',
     padding: 12,
     textAlign: 'right',
   },
   historyText: {
-    color: '#7c7c7c',
+    color: '#757478',
     fontSize: 20,
     marginRight: 10,
     alignSelf: 'flex-end',
@@ -152,7 +152,7 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
   },
   button: {
-    backgroundColor: 'white',
+    backgroundColor: '#3D0075',
     alignItems: 'center',
     justifyContent: 'center',
     minWidth: 90,
@@ -160,7 +160,7 @@ const styles = StyleSheet.create({
     flex: 2,
   },
   textButton: {
-    color: '#7c7c7c',
+    color: '#3D0075',
     fontSize: 20,
   },
 });
